@@ -23,7 +23,6 @@ print(fotograf_sayisal_gri)
 # bgr -> rgb
 fotograf_sayisal_rgb = cv2.cvtColor(fotograf_sayisal, cv2.COLOR_BGR2RGB)
 
-
 #plt.figure(figsize=(12,4))
 
 plt.subplot(1,2,1)
