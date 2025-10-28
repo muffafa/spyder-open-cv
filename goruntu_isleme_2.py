@@ -22,7 +22,6 @@ print(fotograf_sayisal_gri)
 
 # bgr -> rgb
 fotograf_sayisal_rgb = cv2.cvtColor(fotograf_sayisal, cv2.COLOR_BGR2RGB)
-fotograf_sayisal_gri_rgb = cv2.cvtColor(fotograf_sayisal_gri, cv2.COLOR_BGR2RGB)
 
 
 #plt.figure(figsize=(12,4))
@@ -32,7 +31,7 @@ plt.imshow(fotograf_sayisal_rgb)
 plt.title('Normal')
 
 plt.subplot(1,2,2)
-plt.imshow(fotograf_sayisal_gri_rgb)
+plt.imshow(fotograf_sayisal_gri, cmap='hot') 
 plt.title('Gri')
 
 plt.show()
