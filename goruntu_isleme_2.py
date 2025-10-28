@@ -24,13 +24,14 @@ print(fotograf_sayisal_gri)
 fotograf_sayisal_rgb = cv2.cvtColor(fotograf_sayisal, cv2.COLOR_BGR2RGB)
 fotograf_sayisal_gri_rgb = cv2.cvtColor(fotograf_sayisal_gri, cv2.COLOR_BGR2RGB)
 
-plt.figure(figsize=(12,4))
 
-plt.subplot(2,1,1)
+#plt.figure(figsize=(12,4))
+
+plt.subplot(1,2,1)
 plt.imshow(fotograf_sayisal_rgb)
 plt.title('Normal')
 
-plt.subplot(2,1,2)
+plt.subplot(1,2,2)
 plt.imshow(fotograf_sayisal_gri_rgb)
 plt.title('Gri')
 
